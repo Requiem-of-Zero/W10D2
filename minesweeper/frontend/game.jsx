@@ -30,7 +30,7 @@ export default class Game extends React.Component {
         
         let modal;
         if (board.lost() || board.won()) {
-            const msg = board.won() ? "You win hot stuff" : "You suck loser";
+            const msg = board.won() ? "You win!" : "You lost. Try again?";
             modal =
                 <div className="modal-screen">
                     <div className="modal-content">
